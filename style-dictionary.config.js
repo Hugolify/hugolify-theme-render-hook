@@ -118,13 +118,14 @@ await new StyleDictionary({
 }).buildAllPlatforms();
 
 // -------------------------------------------------------
-// Single barrel — assets/css/tokens/hugolify.css imports every generated token
-// file, grouped by folder (components, semantic, …). Files are discovered from
-// disk, so adding a JSON — or a whole new group — needs no manual edit;
-// tokens/design-system.css imports this one barrel. Each file declares its own
-// @layer tokens, so a plain @import is enough. A token file that produced no
-// CSS (e.g. a name collision) is skipped rather than imported, so the CSS build
-// never points at a missing file.
+// Single barrel — assets/css/tokens/render-hook.css imports every generated
+// token file, grouped by folder (components, semantic, …). Files are
+// discovered from disk, so adding a JSON — or a whole new group — needs no
+// manual edit; the module entry point (assets/css/modules/render-hook.css)
+// imports this barrel. Each file declares its own @layer tokens, so a plain
+// @import is enough. A token file that produced no CSS (e.g. a name collision)
+// is skipped rather than imported, so the CSS build never points at a missing
+// file.
 // -------------------------------------------------------
 
 const groups = {};
@@ -138,13 +139,13 @@ for (const file of tokenFiles) {
 
 if (missing.length) {
   console.warn(
-    `⚠ No CSS generated (excluded from hugolify.css): ${missing.join(', ')}`
+    `⚠ No CSS generated (excluded from render-hook.css): ${missing.join(', ')}`
   );
 }
 
 fs.writeFileSync(
-  './assets/css/tokens/hugolify.css',
-  '/* hugolify.css — barrel, do not edit */\n\n' +
+  './assets/css/tokens/render-hook.css',
+  '/* render-hook.css — barrel, do not edit */\n\n' +
     Object.keys(groups)
       .sort()
       .map(
