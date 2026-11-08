@@ -1,0 +1,2 @@
+heading:
+  anchor: 'Lien vers cette section : {{ .Title }}'

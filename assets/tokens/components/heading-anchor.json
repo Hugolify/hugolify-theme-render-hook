@@ -1,0 +1,18 @@
+{
+  "heading": {
+    "anchor": {
+      "icon": {
+        "margin": { "inlineEnd": { "$value": "0.4em" } },
+        "size": { "$value": "1em" }
+      },
+      "marker": {
+        "default": { "$value": " #" },
+        "opacity": { "$value": "0.3" },
+        "transition": {
+          "duration": { "$value": "200ms" },
+          "easing": { "$value": "ease-in-out" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* components/heading-anchor.css */
+@layer tokens {
+  :root {
+    --heading-anchor-icon-margin-inline-end: 0.4em;
+    --heading-anchor-icon-size: 1em;
+    --heading-anchor-marker:  #;
+    --heading-anchor-marker-opacity: 0.3;
+    --heading-anchor-marker-transition-duration: 200ms;
+    --heading-anchor-marker-transition-easing: ease-in-out;
+  }
+}
