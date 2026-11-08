@@ -17,9 +17,10 @@
       anchor: true    wrap the heading text in an anchor link (default:
                       false — the heading renders like Hugo's default)
 
-  The anchor link stays visually neutral (CSS lives in the design system,
-  .anchor-heading*); the marker appears on hover. The prefix anchor-heading
-  avoids any collision with the .heading component.
+  The anchor link stays visually neutral; the marker appears on hover.
+  CSS ships in this module (assets/css/components/heading-anchor.css,
+  loaded via the modules/render-hook.css barrel) — .anchor-heading*
+  classes, kept apart from the .heading component by the prefix.
 
   @see i18n key heading.anchor for the aria-label.
 */ -}}
