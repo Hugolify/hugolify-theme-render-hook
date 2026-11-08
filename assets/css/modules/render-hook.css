@@ -1,0 +1,7 @@
+/* css/modules/render-hook.css — hugolify-theme-render-hook entry point */
+
+/* Tokens */
+@import '../tokens/render-hook.css';
+
+/* Components */
+@import '../components/heading-anchor.css';
