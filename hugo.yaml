@@ -1,0 +1,14 @@
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: i18n
+      target: i18n
+    - source: layouts
+      target: layouts
+
+params:
+  headings:
+    # Render hook: wrap Markdown heading text in an anchor link.
+    # Also add the module in config/_default/module.yaml to load the hook.
+    anchor: false
